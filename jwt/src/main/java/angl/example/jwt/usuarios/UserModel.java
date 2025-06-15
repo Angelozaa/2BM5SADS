@@ -8,14 +8,17 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-@Entity(name = "user")
-@Table(name = "user")
+@Entity(name = "users")
+@Table(name = "users")
 public class UserModel implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-    private String login;
+    private String nome;
+
+    @Column(unique = true)
+    private String email;
     private String password;
     private UserRole role;
 
@@ -35,7 +38,7 @@ public class UserModel implements UserDetails {
 
     @Override
     public String getUsername() {
-        return login;
+        return email;
     }
 
     public UserRole getRole() {
@@ -46,15 +49,32 @@ public class UserModel implements UserDetails {
         this.role = role;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

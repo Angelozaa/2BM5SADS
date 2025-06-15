@@ -1,4 +1,4 @@
-package angl.example.jwt.usuarios;
+package angl.example.jwt.auth;
 
 public class LoginResponse {
     private String token;

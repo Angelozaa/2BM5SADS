@@ -1,15 +1,15 @@
-package angl.example.jwt.usuarios;
+package angl.example.jwt.auth;
 
 public class LoginRequest {
-    private String login;
+    private String email;
     private String password;
 
     // getters e setters
-    public String getLogin() {
-        return login;
+    public String getEmail() {
+        return email;
     }
-    public void setLogin(String login) {
-        this.login = login;
+    public void setEmail(String email) {
+        this.email = email;
     }
     public String getPassword() {
         return password;

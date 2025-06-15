@@ -1,5 +1,8 @@
-package angl.example.jwt.usuarios;
+package angl.example.jwt.config;
 
+import angl.example.jwt.auth.TokenService;
+import angl.example.jwt.usuarios.UserModel;
+import angl.example.jwt.usuarios.UserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -33,7 +36,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             String token = authHeader.replace("Bearer ", "");
             String login = tokenService.getSubject(token);
 
-            UserModel user = (UserModel) userRepository.findByLogin(login);
+            UserModel user = (UserModel) userRepository.findByEmail(login);
 
             if (user != null) {
                 UsernamePasswordAuthenticationToken authentication =

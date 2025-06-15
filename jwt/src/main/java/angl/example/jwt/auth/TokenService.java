@@ -1,5 +1,6 @@
-package angl.example.jwt.usuarios;
+package angl.example.jwt.auth;
 
+import angl.example.jwt.usuarios.UserModel;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
