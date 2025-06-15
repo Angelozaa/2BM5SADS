@@ -38,9 +38,9 @@ Esta aplicação permite:
 - Rodar JwtApplication
 
 ### > A API estará disponível em:  
-### > `http://localhost:8080`
+#### `http://localhost:8080`
+
 ### 👤 Endpoints para Usuário Autenticado
-#### Método	Rota	Descrição
 GET	/me	 -  Visualiza dados do próprio usuário
 PUT	/me	 -  Atualiza nome e senha do próprio usuário
 
