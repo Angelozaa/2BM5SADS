@@ -41,8 +41,8 @@ Esta aplicação permite:
 #### `http://localhost:8080`
 
 ### 👤 Endpoints para Usuário Autenticado
-GET	/me	 -  Visualiza dados do próprio usuário
-PUT	/me	 -  Atualiza nome e senha do próprio usuário
+- GET	/me	 -  Visualiza dados do próprio usuário
+- PUT	/me	 -  Atualiza nome e senha do próprio usuário
 
 ### 🛡️ Endpoints para Admin
 - GET	    /admin/users	-  Lista todos os usuários
