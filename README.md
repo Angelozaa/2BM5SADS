@@ -36,3 +36,15 @@ Esta aplicação permite:
 - Abrir com IntelliJ
 - Esperar que carregue todas as dependencias
 - Rodar JwtApplication
+
+
+### 👤 Endpoints para Usuário Autenticado
+#### Método	Rota	Descrição
+GET	/me	Visualiza dados do próprio usuário
+PUT	/me	Atualiza nome e senha do próprio usuário
+
+### 🛡️ Endpoints para Admin
+#### Método	Rota	Descrição
+- GET	    /admin/users	Lista todos os usuários
+- PUT	    /admin/users/{id}	Edita qualquer usuário
+- DELETE	/admin/users/{id}	Deleta qualquer usuário
