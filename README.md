@@ -13,7 +13,7 @@ Esta aplicação permite:
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+##   Tecnologias Utilizadas
 
 - Java 17
 - Spring Boot 3+
