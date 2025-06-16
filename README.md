@@ -40,6 +40,9 @@ Esta aplicação permite:
 ### > A API estará disponível em:  
 #### `http://localhost:8080`
 
+### Endpoints para todos
+- POST /register - Registra um novo usuario
+- POST /login - Fazer login(devolve o token para o restante dos testes)
 ### 👤 Endpoints para Usuário Autenticado
 - GET	/me	 -  Visualiza dados do próprio usuário
 - PUT	/me	 -  Atualiza nome e senha do próprio usuário
